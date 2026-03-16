@@ -72,3 +72,8 @@ Sessions stored in MongoDB not memory so the app can scale horizontally. Text in
 Postman: import NSM_Postman_Collection.json, run folders 1 to 5 in order, do not skip steps.
 
 Manual: register resident goes to login, register provider goes to login, login redirects to requests, resident creates request and sees it in list, provider sees requests but no New Request button, provider submits quote and request becomes quoted, second provider submits another, resident sees both quotes and accepts one, request becomes assigned and other quote becomes rejected, provider sees status in My Quotes, resident marks completed, provider blocked from /create-request, resident blocked from /my-quotes, logout blocks all protected routes.
+
+Test accounts (after running npm run seed):
+  resident@test.com  / password123  (resident)
+  provider1@test.com / password123  (provider)
+  provider2@test.com / password123  (provider)
